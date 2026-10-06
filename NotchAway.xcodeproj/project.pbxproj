@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* NotchAwayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* NotchAwayApp.swift */; };
+		A10000000000000000000002 /* NotchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* NotchController.swift */; };
+		A10000000000000000000003 /* WallpaperProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* WallpaperProcessor.swift */; };
+		A10000000000000000000004 /* NotchMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* NotchMenuView.swift */; };
+		A10000000000000000000005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* SettingsView.swift */; };
+		A10000000000000000000100 /* AppSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000100 /* AppSupport.swift */; };
+		A10000000000000000000101 /* IslandSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000101 /* IslandSettings.swift */; };
+		A10000000000000000000102 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000102 /* AppServices.swift */; };
+		A10000000000000000000103 /* IslandState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000103 /* IslandState.swift */; };
+		A10000000000000000000104 /* IslandWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000104 /* IslandWindowController.swift */; };
+		A10000000000000000000105 /* IslandViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000105 /* IslandViews.swift */; };
+		A10000000000000000000106 /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000106 /* NowPlaying.swift */; };
+		A10000000000000000000107 /* KeepAwakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000107 /* KeepAwakeService.swift */; };
+		A10000000000000000000108 /* FocusTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000108 /* FocusTimer.swift */; };
+		A10000000000000000000109 /* Clipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000109 /* Clipboard.swift */; };
+		A10000000000000000000110 /* FileShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000110 /* FileShelf.swift */; };
+		A10000000000000000000111 /* QuickNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000111 /* QuickNotes.swift */; };
+		A10000000000000000000112 /* CalendarReminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000112 /* CalendarReminders.swift */; };
+		A10000000000000000000113 /* SystemStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000113 /* SystemStats.swift */; };
+		A10000000000000000000114 /* HUDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000114 /* HUDService.swift */; };
+		A10000000000000000000115 /* CommandPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000115 /* CommandPalette.swift */; };
+		A10000000000000000000300 /* LiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000300 /* LiveStyle.swift */; };
+		A10000000000000000000301 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000301 /* Weather.swift */; };
+		A10000000000000000000302 /* DailyRings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000302 /* DailyRings.swift */; };
+		A10000000000000000000303 /* DeviceBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000303 /* DeviceBattery.swift */; };
+		A10000000000000000000304 /* LiveScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000304 /* LiveScores.swift */; };
+		A10000000000000000000305 /* LiveCaptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000305 /* LiveCaptions.swift */; };
+		A10000000000000000000306 /* MindfulCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000306 /* MindfulCard.swift */; };
+		A10000000000000000000307 /* HomeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000307 /* HomeCards.swift */; };
+		A10000000000000000000400 /* DevicesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000400 /* DevicesCard.swift */; };
+		A10000000000000000000401 /* HeroFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000401 /* HeroFeatures.swift */; };
+		A10000000000000000000500 /* DayReplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000500 /* DayReplay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* NotchAwayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchAwayApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* NotchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchController.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* WallpaperProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperProcessor.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* NotchMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchMenuView.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* NotchAway/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NotchAway/Info.plist; sourceTree = "<group>"; };
+		B10000000000000000000007 /* NotchAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000100 /* AppSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSupport.swift; sourceTree = "<group>"; };
+		B10000000000000000000101 /* IslandSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandSettings.swift; sourceTree = "<group>"; };
+		B10000000000000000000102 /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		B10000000000000000000103 /* IslandState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandState.swift; sourceTree = "<group>"; };
+		B10000000000000000000104 /* IslandWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandWindowController.swift; sourceTree = "<group>"; };
+		B10000000000000000000105 /* IslandViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandViews.swift; sourceTree = "<group>"; };
+		B10000000000000000000106 /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
+		B10000000000000000000107 /* KeepAwakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAwakeService.swift; sourceTree = "<group>"; };
+		B10000000000000000000108 /* FocusTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimer.swift; sourceTree = "<group>"; };
+		B10000000000000000000109 /* Clipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard.swift; sourceTree = "<group>"; };
+		B10000000000000000000110 /* FileShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShelf.swift; sourceTree = "<group>"; };
+		B10000000000000000000111 /* QuickNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNotes.swift; sourceTree = "<group>"; };
+		B10000000000000000000112 /* CalendarReminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReminders.swift; sourceTree = "<group>"; };
+		B10000000000000000000113 /* SystemStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemStats.swift; sourceTree = "<group>"; };
+		B10000000000000000000114 /* HUDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDService.swift; sourceTree = "<group>"; };
+		B10000000000000000000115 /* CommandPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPalette.swift; sourceTree = "<group>"; };
+		B10000000000000000000300 /* LiveStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStyle.swift; sourceTree = "<group>"; };
+		B10000000000000000000301 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B10000000000000000000302 /* DailyRings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRings.swift; sourceTree = "<group>"; };
+		B10000000000000000000303 /* DeviceBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBattery.swift; sourceTree = "<group>"; };
+		B10000000000000000000304 /* LiveScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScores.swift; sourceTree = "<group>"; };
+		B10000000000000000000305 /* LiveCaptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCaptions.swift; sourceTree = "<group>"; };
+		B10000000000000000000306 /* MindfulCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulCard.swift; sourceTree = "<group>"; };
+		B10000000000000000000307 /* HomeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCards.swift; sourceTree = "<group>"; };
+		B10000000000000000000400 /* DevicesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesCard.swift; sourceTree = "<group>"; };
+		B10000000000000000000401 /* HeroFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroFeatures.swift; sourceTree = "<group>"; };
+		B10000000000000000000500 /* DayReplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayReplay.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000002 /* NotchAway */,
+				D10000000000000000000003 /* Products */,
+				B10000000000000000000006 /* NotchAway/Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		D10000000000000000000002 /* NotchAway */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* NotchAwayApp.swift */,
+				B10000000000000000000002 /* NotchController.swift */,
+				B10000000000000000000003 /* WallpaperProcessor.swift */,
+				B10000000000000000000004 /* NotchMenuView.swift */,
+				B10000000000000000000005 /* SettingsView.swift */,
+				B10000000000000000000400 /* DevicesCard.swift */,
+				B10000000000000000000401 /* HeroFeatures.swift */,
+				B10000000000000000000500 /* DayReplay.swift */,
+				B10000000000000000000300 /* LiveStyle.swift */,
+				B10000000000000000000301 /* Weather.swift */,
+				B10000000000000000000302 /* DailyRings.swift */,
+				B10000000000000000000303 /* DeviceBattery.swift */,
+				B10000000000000000000304 /* LiveScores.swift */,
+				B10000000000000000000305 /* LiveCaptions.swift */,
+				B10000000000000000000306 /* MindfulCard.swift */,
+				B10000000000000000000307 /* HomeCards.swift */,
+				B10000000000000000000100 /* AppSupport.swift */,
+				B10000000000000000000101 /* IslandSettings.swift */,
+				B10000000000000000000102 /* AppServices.swift */,
+				B10000000000000000000103 /* IslandState.swift */,
+				B10000000000000000000104 /* IslandWindowController.swift */,
+				B10000000000000000000105 /* IslandViews.swift */,
+				B10000000000000000000106 /* NowPlaying.swift */,
+				B10000000000000000000107 /* KeepAwakeService.swift */,
+				B10000000000000000000108 /* FocusTimer.swift */,
+				B10000000000000000000109 /* Clipboard.swift */,
+				B10000000000000000000110 /* FileShelf.swift */,
+				B10000000000000000000111 /* QuickNotes.swift */,
+				B10000000000000000000112 /* CalendarReminders.swift */,
+				B10000000000000000000113 /* SystemStats.swift */,
+				B10000000000000000000114 /* HUDService.swift */,
+				B10000000000000000000115 /* CommandPalette.swift */,
+			);
+			path = NotchAway;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000007 /* NotchAway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000000000000000000001 /* NotchAway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10000000000000000000002 /* Build configuration list for PBXNativeTarget "NotchAway" */;
+			buildPhases = (
+				C10000000000000000000002 /* Sources */,
+				C10000000000000000000001 /* Frameworks */,
+				C10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotchAway;
+			productName = NotchAway;
+			productReference = B10000000000000000000007 /* NotchAway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E10000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = F10000000000000000000001 /* Build configuration list for PBXProject "NotchAway" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D10000000000000000000001;
+			productRefGroup = D10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10000000000000000000001 /* NotchAway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* NotchAwayApp.swift in Sources */,
+				A10000000000000000000002 /* NotchController.swift in Sources */,
+				A10000000000000000000003 /* WallpaperProcessor.swift in Sources */,
+				A10000000000000000000004 /* NotchMenuView.swift in Sources */,
+				A10000000000000000000005 /* SettingsView.swift in Sources */,
+				A10000000000000000000400 /* DevicesCard.swift in Sources */,
+				A10000000000000000000401 /* HeroFeatures.swift in Sources */,
+				A10000000000000000000500 /* DayReplay.swift in Sources */,
+				A10000000000000000000300 /* LiveStyle.swift in Sources */,
+				A10000000000000000000301 /* Weather.swift in Sources */,
+				A10000000000000000000302 /* DailyRings.swift in Sources */,
+				A10000000000000000000303 /* DeviceBattery.swift in Sources */,
+				A10000000000000000000304 /* LiveScores.swift in Sources */,
+				A10000000000000000000305 /* LiveCaptions.swift in Sources */,
+				A10000000000000000000306 /* MindfulCard.swift in Sources */,
+				A10000000000000000000307 /* HomeCards.swift in Sources */,
+				A10000000000000000000100 /* AppSupport.swift in Sources */,
+				A10000000000000000000101 /* IslandSettings.swift in Sources */,
+				A10000000000000000000102 /* AppServices.swift in Sources */,
+				A10000000000000000000103 /* IslandState.swift in Sources */,
+				A10000000000000000000104 /* IslandWindowController.swift in Sources */,
+				A10000000000000000000105 /* IslandViews.swift in Sources */,
+				A10000000000000000000106 /* NowPlaying.swift in Sources */,
+				A10000000000000000000107 /* KeepAwakeService.swift in Sources */,
+				A10000000000000000000108 /* FocusTimer.swift in Sources */,
+				A10000000000000000000109 /* Clipboard.swift in Sources */,
+				A10000000000000000000110 /* FileShelf.swift in Sources */,
+				A10000000000000000000111 /* QuickNotes.swift in Sources */,
+				A10000000000000000000112 /* CalendarReminders.swift in Sources */,
+				A10000000000000000000113 /* SystemStats.swift in Sources */,
+				A10000000000000000000114 /* HUDService.swift in Sources */,
+				A10000000000000000000115 /* CommandPalette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F10000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F10000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MS689QX87T;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotchAway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandip.NotchAway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F10000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MS689QX87T;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotchAway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandip.NotchAway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10000000000000000000001 /* Build configuration list for PBXProject "NotchAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000003 /* Debug */,
+				F10000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10000000000000000000002 /* Build configuration list for PBXNativeTarget "NotchAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000005 /* Debug */,
+				F10000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10000000000000000000002 /* Project object */;
+}

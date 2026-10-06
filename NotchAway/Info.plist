@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>NotchAway</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>NotchAway</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>NotchAway controls Apple Music and Spotify to show what's playing in the notch.</string>
+    <key>NSAudioCaptureUsageDescription</key>
+    <string>NotchAway captures Mac audio only while you explicitly run Live Translation or Quick Screen Recording.</string>
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>NotchAway records your screen only when you explicitly start Quick Screen Recording.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>NotchAway shows your upcoming events in the notch.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>NotchAway shows your upcoming events in the notch.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>NotchAway shares files directly with your phone over your local Wi-Fi network.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>NotchAway uses your approximate location to show local weather and UV.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>NotchAway uses your approximate location to show local weather and UV.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>NotchAway listens to the microphone only while Live Captions or Live Translation is on.</string>
+	<key>NSPrefersDisplaySafeAreaCompatibilityMode</key>
+	<false/>
+	<key>NSRemindersFullAccessUsageDescription</key>
+	<string>NotchAway shows and adds reminders from the notch.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>NotchAway shows and adds reminders from the notch.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>NotchAway turns speech into on-device live captions and translations in the notch.</string>
+</dict>
+</plist>

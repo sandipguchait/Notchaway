@@ -1,0 +1,19 @@
+.DS_Store
+
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+
+# Build products
+DerivedData/
+build/
+*.moved-aside
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Local environment files
+.env
+.env.*
+!.env.example
