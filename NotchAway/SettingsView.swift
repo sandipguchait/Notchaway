@@ -206,7 +206,7 @@ private struct FeatureSettingsPane: View {
                 Toggle("Run a Shortcut when a call app becomes active", isOn: $hero.callAwareDNDEnabled)
                 TextField("DND Shortcut name", text: $hero.dndShortcutName)
                 Stepper("Battery alert: \(hero.batteryLimit)%", value: $hero.batteryLimit, in: 50...100, step: 5)
-                Text("Quick screen recordings are saved to Movies › NotchAway Recordings. macOS will request Screen Recording permission the first time.")
+                Text("When a quick screen recording stops, NotchAway asks whether to save it to your Desktop or discard it. macOS will request Screen Recording permission the first time.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

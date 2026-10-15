@@ -28,6 +28,8 @@
 	<string>NotchAway shows your upcoming events in the notch.</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>NotchAway shows your upcoming events in the notch.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>NotchAway saves your screen recordings to the Desktop when you choose Save.</string>
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>NSLocalNetworkUsageDescription</key>

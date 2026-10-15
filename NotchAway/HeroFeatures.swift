@@ -617,9 +617,9 @@ final class HeroFeaturesService: ObservableObject {
             return
         }
 
-        let movies = FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask).first
-            ?? FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Movies", isDirectory: true)
-        let folder = movies.appendingPathComponent("NotchAway Recordings", isDirectory: true)
+        // Record into a scratch folder; the file only lands on the Desktop once the user chooses Save.
+        let folder = FileManager.default.temporaryDirectory
+            .appendingPathComponent("NotchAway Recordings", isDirectory: true)
 
         do {
             try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
@@ -675,15 +675,56 @@ final class HeroFeaturesService: ObservableObject {
 
     private func finishScreenRecording(at outputURL: URL) {
         let size = (try? outputURL.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0
-        if size > 0 {
-            lastScreenRecordingURL = outputURL
-            screenRecordingStatus = "Saved to Movies"
-            onEvent?("Screen recording saved")
-        } else {
+        guard size > 0 else {
             try? FileManager.default.removeItem(at: outputURL)
             screenRecordingStatus = "Recording cancelled"
             onEvent?("Screen recording cancelled")
+            return
         }
+
+        let alert = NSAlert()
+        alert.messageText = "Save screen recording?"
+        alert.informativeText = "\(outputURL.lastPathComponent) · "
+            + ByteCountFormatter.string(fromByteCount: Int64(size), countStyle: .file)
+            + "\nSaved recordings go to your Desktop."
+        alert.alertStyle = .informational
+        alert.addButton(withTitle: "Save")
+        alert.addButton(withTitle: "Discard").hasDestructiveAction = true
+        NSApp.activate(ignoringOtherApps: true)
+        alert.window.level = .floating
+
+        guard alert.runModal() == .alertFirstButtonReturn else {
+            try? FileManager.default.removeItem(at: outputURL)
+            screenRecordingStatus = "Recording discarded"
+            onEvent?("Screen recording discarded")
+            return
+        }
+
+        do {
+            let destination = Self.uniqueDesktopURL(for: outputURL.lastPathComponent)
+            try FileManager.default.moveItem(at: outputURL, to: destination)
+            lastScreenRecordingURL = destination
+            screenRecordingStatus = "Saved to Desktop"
+            onEvent?("Screen recording saved to Desktop")
+        } catch {
+            try? FileManager.default.removeItem(at: outputURL)
+            screenRecordingStatus = "Could not save to Desktop"
+            onEvent?("Could not save recording: \(error.localizedDescription)")
+        }
+    }
+
+    private static func uniqueDesktopURL(for fileName: String) -> URL {
+        let desktop = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first
+            ?? FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Desktop", isDirectory: true)
+        let base = (fileName as NSString).deletingPathExtension
+        let ext = (fileName as NSString).pathExtension
+        var candidate = desktop.appendingPathComponent(fileName)
+        var index = 2
+        while FileManager.default.fileExists(atPath: candidate.path) {
+            candidate = desktop.appendingPathComponent("\(base) (\(index)).\(ext)")
+            index += 1
+        }
+        return candidate
     }
 
     private static var isAdHocSigned: Bool {
@@ -1715,7 +1756,7 @@ private struct HeroToolsView: View {
                             Text(hero.screenRecordingStatus)
                                 .font(.system(size: 11, weight: .medium))
                             HStack(spacing: 6) {
-                                PillButton(title: hero.isScreenRecording ? "Stop & Save" : "Start Recording",
+                                PillButton(title: hero.isScreenRecording ? "Stop" : "Start Recording",
                                            symbol: hero.isScreenRecording ? "stop.fill" : "record.circle",
                                            prominent: true) {
                                     hero.toggleScreenRecording()
@@ -1726,7 +1767,7 @@ private struct HeroToolsView: View {
                                     }
                                 }
                             }
-                            Text("Captures the main display and saves to Movies › NotchAway Recordings.")
+                            Text("Captures the main display. When you stop, choose Save to put it on your Desktop.")
                                 .font(.system(size: 9))
                                 .foregroundStyle(.secondary)
                         }
